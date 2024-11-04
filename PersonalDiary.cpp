@@ -97,10 +97,6 @@ public:
 };
 
 int main() {
-    std::locale::global(std::locale(""));
-
-    // Example of Cyrillic output
-    std::wcout.imbue(std::locale(""));
     system("chcp 1251 > nul");
     Diary diary;
     int choice;
